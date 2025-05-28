@@ -9,6 +9,7 @@ from test_data.data import TestData
 
 
 class TestHeader:
+    @allure.description('Проверки переходов по клику на лого в хедере')
     @allure.title('Проверка перехода на главную страницу по кликуна лого "Самокат"')
     def test_logo_scooter_to_main_page(self, driver):
         with allure.step("Открытие главной страницы"):

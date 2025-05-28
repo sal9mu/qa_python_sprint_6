@@ -8,6 +8,7 @@ from pages.main_page import MainPage
 
 
 class TestMainPageFaq:
+    @allure.title('Проверки блока с вопросами')
     @allure.description('Проверка соответствия текста в ответах на вопросы')
     @pytest.mark.parametrize('question_id, expected_answer', TestData.test_questions_answer_data)
     def test_check_faq_answer(self, driver, question_id, expected_answer):

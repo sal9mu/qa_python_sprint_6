@@ -1,6 +1,4 @@
 class TestData:
-    url = 'https://qa-scooter.praktikum-services.ru/'
-    dzen = 'https://dzen.ru/'
 
     test_user_data1 = ['Андрей', 'Захаров', 'Москва', 'Лубянка', '79114582615', '12.07.2025', 'не звонить']
 

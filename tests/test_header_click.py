@@ -4,7 +4,7 @@ from conftest import driver
 from selenium.webdriver.support.wait import WebDriverWait
 from locators.main_page_locators import MainPageLocators
 from pages.main_page import MainPage
-from test_data.data import TestData
+from test_data.urls import TestURL
 
 
 
@@ -38,4 +38,4 @@ class TestHeader:
             main_page.wait_logo_main_page_dzen()
             main_page.get_page_dzen_title()
         with allure.step("Проверка наличия слова Дзен в url"):
-            assert 'dzen' in TestData.dzen
+            assert 'dzen' in TestURL.dzen
